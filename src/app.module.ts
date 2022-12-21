@@ -8,11 +8,12 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true
+      isGlobal: true,
     }),
-    AuthMoodule, 
-    UserModule, 
-    BookmarkModule, 
-    PrismaModule],
+    AuthMoodule,
+    UserModule,
+    BookmarkModule,
+    PrismaModule,
+  ],
 })
 export class AppModule {}
